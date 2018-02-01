@@ -1,0 +1,28 @@
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="hd-pollution">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">1</div>
+      <h1>Calidad del aire</h1>
+      <h2>Alta</h2>
+    </div>
+  </template>
+
+  <script>
+    class HdPollution extends Polymer.Element {
+      static get is() { return 'hd-pollution'; }
+    }
+
+    window.customElements.define(HdPollution.is, HdPollution);
+  </script>
+</dom-module>

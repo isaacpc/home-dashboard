@@ -1,0 +1,28 @@
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="hd-weather">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">1</div>
+      <h1>Temperatura</h1>
+      <h2>10 ºC</h2>
+    </div>
+  </template>
+
+  <script>
+    class HdWeather extends Polymer.Element {
+      static get is() { return 'hd-weather'; }
+    }
+
+    window.customElements.define(HdWeather.is, HdWeather);
+  </script>
+</dom-module>
